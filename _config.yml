@@ -256,7 +256,7 @@ keep_files:
   - .nojekyll
 
 # Use al_folio_core as the theme runtime; local files can still override theme files.
-theme: al_folio_core
+# theme: al_folio_core
 
 # Plug-ins
 plugins:
@@ -301,6 +301,10 @@ plugins:
   - al_email_protect
   - al_marimo
   - al_rtl
+  - jekyll-remote-theme
+
+# 2. Point to the specific owner and repository 
+remote_theme: alshedivat/al-folio  # Or a specialized core fork
 
 # Sitemap settings
 defaults:
