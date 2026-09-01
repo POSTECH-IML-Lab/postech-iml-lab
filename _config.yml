@@ -2,14 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Interactive Machine Learning Lab # the website title (if blank, full name will be used instead)
 first_name: You
 middle_name: R.
 last_name: Name
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note: # placeholder note removed — add one back here if you want a line under the contact icons
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Interactive Machine Learning Lab (IML Lab) at POSTECH. [Edit this in _config.yml with a one-line description of the lab's research focus.]
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -244,7 +243,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
