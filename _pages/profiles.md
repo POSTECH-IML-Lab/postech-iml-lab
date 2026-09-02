@@ -23,21 +23,21 @@ nav_order: 7
   }
   .iml-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     gap: 1.75rem 1.25rem;
   }
   .iml-card {
     text-align: center;
   }
   .iml-avatar {
-    width: 96px;
-    height: 96px;
-    border-radius: 16px;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
     margin: 0 auto 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.75rem;
+    font-size: 2.2rem;
     font-weight: 600;
     background: rgba(127, 127, 127, 0.12);
     border: 1px solid rgba(127, 127, 127, 0.25);
@@ -95,12 +95,15 @@ nav_order: 7
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 16px;
-    /* The source photo is a chest-up shot, not a tight headshot, so the
-       face reads small at avatar size. Scaling up and shifting the zoom
-       origin toward the face (roughly 31% down from the top of the
-       photo, where the eyes/nose sit) crops in tighter on the face
-       instead of showing mostly shoulders/torso. */
+    border-radius: 20px;
+  }
+  /* Some source photos are chest-up shots, not tight headshots, so the face
+     reads small at avatar size. Add `iml-avatar--zoom` to the avatar div to
+     scale up and shift the zoom origin toward the face (roughly 31% down from
+     the top, where the eyes/nose sit) so it crops in tighter on the face.
+     The square member headshots in assets/img/members/ are already cropped
+     tight and do NOT need this. */
+  .iml-avatar--zoom img {
     transform: scale(1.5);
     transform-origin: 50% 31%;
   }
@@ -113,7 +116,7 @@ nav_order: 7
 
   <div class="iml-grid">
     <div class="iml-card">
-      <div class="iml-avatar"><img src="{{ '/assets/img/members/kwang-sung-jun.jpg' | relative_url }}" alt="Kwang-Sung Jun" loading="lazy"></div>
+      <div class="iml-avatar iml-avatar--zoom"><img src="{{ '/assets/img/members/kwang-sung-jun.jpg' | relative_url }}" alt="Kwang-Sung Jun" loading="lazy"></div>
       <p class="iml-name"><a href="https://kwangsungjun.github.io/">Kwang-Sung Jun</a></p>
       <span class="iml-role">Principal Investigator</span>
     </div>
@@ -123,7 +126,7 @@ nav_order: 7
       <span class="iml-role">Postdoc (Summer'26–)</span>
     </div>
     <div class="iml-card">
-      <div class="iml-avatar">MH</div>
+      <div class="iml-avatar"><img src="{{ '/assets/img/members/minsoo-ha.jpg' | relative_url }}" alt="Minsoo Ha" loading="lazy"></div>
       <p class="iml-name"><a href="https://minsoo0926.github.io/">Minsoo Ha</a></p>
       <span class="iml-role">M.S. Student (Fall'26–)</span>
     </div>
@@ -133,12 +136,12 @@ nav_order: 7
       <span class="iml-role">Intern (Spring'26–)</span>
     </div>
     <div class="iml-card">
-      <div class="iml-avatar">JP</div>
+      <div class="iml-avatar"><img src="{{ '/assets/img/members/juhyeong-pang.jpg' | relative_url }}" alt="Juhyeong Pang" loading="lazy"></div>
       <p class="iml-name">Juhyeong Pang</p>
       <span class="iml-role">Intern, UW–Madison (Summer'26–)</span>
     </div>
     <div class="iml-card">
-      <div class="iml-avatar">TH</div>
+      <div class="iml-avatar"><img src="{{ '/assets/img/members/taehyeok-ha.jpg' | relative_url }}" alt="Taehyeok Ha" loading="lazy"></div>
       <p class="iml-name"><a href="https://www.linkedin.com/in/hataehyeok/">Taehyeok Ha</a></p>
       <span class="iml-role">Intern (Summer'26–)</span>
     </div>
@@ -206,8 +209,9 @@ nav_order: 7
 </div>
 
 <p class="iml-note">
-  Photos are placeholders (initials) for everyone, including the PI — swap them for real photos in
-  <code>_pages/profiles.md</code> whenever you have them. Roster pulled from
+  Initials are placeholders for members without a photo yet — drop a square headshot in
+  <code>assets/img/members/</code> and swap the initials <code>&lt;div&gt;</code> for an
+  <code>&lt;img&gt;</code> in <code>_pages/profiles.md</code>. Roster pulled from
   <a href="https://kwangsungjun.github.io/research-group.html">kwangsungjun.github.io</a> on 2026-09-01 — please
   double-check names, roles, and dates before publishing.
 </p>
