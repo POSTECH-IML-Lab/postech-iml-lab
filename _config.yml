@@ -9,7 +9,9 @@ middle_name:
 last_name: Jun
 contact_note: # placeholder note removed — add one back here if you want a line under the contact icons
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Interactive Machine Learning Lab (IML Lab) at POSTECH. [Edit this in _config.yml with a one-line description of the lab's research focus.]
+  The Interactive Machine Learning Lab (IML Lab) at POSTECH, led by Prof. Kwang-Sung Jun, develops
+  efficient algorithms with rigorous mathematical guarantees for bandits, reinforcement learning,
+  Bayesian optimization, active learning, and LLM post-training.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
