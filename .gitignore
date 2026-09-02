@@ -19,3 +19,8 @@ vendor
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
+
+# Editor swap/backup files
+*.swp
+*.swo
+*~
