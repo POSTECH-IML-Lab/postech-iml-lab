@@ -449,8 +449,12 @@ external_links:
 
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
+# Disabled: this site's pages use plain <img> tags, not the responsive figure include,
+# so the only images this processed were template demo posts. Turning it off removes the
+# ImageMagick apt install and all webp generation from the CI build. Re-enable (and restore
+# the `apt-get install imagemagick` step in deploy.yml) if you start using {% include figure %}.
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
