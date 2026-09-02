@@ -3,9 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: Interactive Machine Learning Lab # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+navbar_title: IML Lab # shorter label shown in the top navbar brand only; site title above is unaffected (see _includes/header.liquid)
+first_name: Kwang-Sung
+middle_name:
+last_name: Jun
 contact_note: # placeholder note removed — add one back here if you want a line under the contact icons
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Interactive Machine Learning Lab (IML Lab) at POSTECH. [Edit this in _config.yml with a one-line description of the lab's research focus.]
@@ -96,13 +97,13 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false # search button/modal removed from the navbar
 socials_in_search: true
 posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 800px # matched to the ~800px text column used on opt.postech.ac.kr
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -229,6 +230,9 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - _pages/teaching.md # teaching page removed for now; delete these two lines (and _teachings/) to bring it back
+  - _teachings/
+  - _projects/ # projects.md no longer uses this collection (rewritten as a research-themes page); delete this line to bring the old tile-based project pages back
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
@@ -358,8 +362,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Jun]
+  first_name: [Kwang-Sung, K.]
 
   style: apa
   locale: en
@@ -422,7 +426,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
@@ -480,7 +484,7 @@ enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (htt
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # dark/light toggle removed from the navbar; site is always light
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
@@ -548,7 +552,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" # body + headings: Inter, at two weights (see _sass/_custom.scss)
   highlightjs:
     integrity:
       css:

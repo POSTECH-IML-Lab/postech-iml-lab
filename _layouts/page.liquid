@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% comment %}
+  Local override of al_folio_core's _layouts/page.liquid (gem version 1.0.15).
+  Only change from upstream: the "{{ page.title }}" heading that repeated the
+  page name (already shown as the active item in the navbar) has been removed.
+  The description line below it is kept.
+{% endcomment %}
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <header class="post-header">
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.plugins contains 'al_comments' %}
+    {% include plugins/al_comments.liquid %}
+  {% endif %}
+</div>

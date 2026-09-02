@@ -1,0 +1,156 @@
+// Site-specific style additions for postech-iml-lab.github.io.
+// Not part of al_folio_core -- loaded via the "custom" @use added to
+// assets/css/main.scss (a local override of that file).
+
+// Match the text-selection highlight color used on kwangsungjun.github.io
+// (its jemdoc.css defines this as the --tf-yellow-light custom property,
+// which resolves to this exact hex value).
+::selection {
+  background: #f7e6b0;
+}
+
+// Give the top-nav menu items more visual weight than bare bold text: a
+// colored underline that grows in on hover, and a filled underline plus a
+// soft background pill to mark the current page. Reuses the theme's own
+// --global-theme-color / --global-hover-color custom properties, so it
+// automatically follows whichever accent color / light-dark mode is active.
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding-bottom: 0.35rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--global-hover-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.15s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  &::after {
+    background-color: var(--global-theme-color);
+    transform: scaleX(1);
+  }
+}
+
+// Font family: Inter for both body text and headings (replacing the
+// theme's default Roboto for both; headings previously used Space Grotesk
+// as a separate display face, but now match the body font per request).
+// Loaded via the google_fonts URL in _config.yml. Headings (h1-h6, which
+// covers both page titles and section headings) get an explicit
+// font-weight: 500 -- between the body's 300 and strong/b's 700 -- so they
+// read as headings against Inter's lighter body weight without being as
+// heavy as bold text.
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+// The "ctrl k" search-hint label (wrapped in its own span in
+// _includes/header.liquid) gets swapped for a Mac-style variant by a script
+// elsewhere on the page after load. Pin that span to a fixed width, wide
+// enough for either "ctrl k" or a longer variant like "command k", so the
+// swap doesn't change the search button's width and reflow every nav item
+// to its right -- only the text inside the reserved box changes.
+.search-hint-text {
+  display: inline-block;
+  min-width: 9ch;
+  text-align: center;
+}
+
+// Site accent color: link text, and the current nav tab's highlight +
+// underline (see the .navbar-nav rules above), both key off these two
+// theme CSS variables (set by al_folio_core's _themes.scss, which this
+// overrides by loading later in the cascade). Only the light-mode :root
+// values are touched -- dark mode is disabled site-wide (enable_darkmode:
+// false in _config.yml), so the html[data-theme="dark"] variant is unused.
+:root {
+  --global-theme-color: #A66520;
+  --global-hover-color: #A66520;
+}
+
+// Top spacing for every page's main content wrapper. This targets
+// .page-content-gap (see _layouts/default.liquid), a class introduced by
+// that local override specifically to replace the legacy "mt-5" name --
+// al_folio_core's own Bootstrap-compatibility CSS maps ".mt-5" to
+// "margin-top: 3rem !important" in a Tailwind @layer, and CSS cascade
+// layers reverse priority for !important declarations, so no unlayered
+// !important override here could ever have beaten it. Renaming the class
+// in the layout sidesteps that fight; this plain (non-important) rule is
+// enough on its own. Combined with the fixed navbar already pushing
+// content down via body.fixed-top-nav's own padding-top, the original
+// 3rem stacked up to a large gap between the navbar and the actual page
+// content -- trimmed to a smaller, still-breathing-room value.
+.page-content-gap {
+  margin-top: 1.25rem;
+}
+
+// Make the fixed bottom bar (copyright/footer) blend into the page instead
+// of standing out as a solid dark band -- al_folio_core's default footer
+// colors (--global-footer-bg-color/--global-footer-text-color, set in
+// _themes.scss) are a dark grey bar with light grey text, which reads as a
+// heavy, high-contrast strip against this site's light theme. Swapped for
+// the page's own background plus a thin top divider and muted text, so it
+// stays legible but recedes rather than drawing the eye.
+footer.fixed-bottom {
+  background-color: var(--global-bg-color);
+  border-top: 1px solid var(--global-divider-color);
+
+  .container {
+    color: var(--global-text-color-light);
+  }
+
+  a {
+    color: var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Make bold body text actually read as bold. The theme sets body's base
+// font-weight to 300 (Light), and without an explicit weight, browsers
+// resolve <strong>/<b>'s default "font-weight: bolder" *relative to the
+// inherited weight* -- from a 300 base that maps to only 400 (Normal) per
+// the CSS spec's relative-weight table, not 700. So bold text was barely
+// distinguishable from regular text. Pinning it to Inter's 700 (already
+// loaded, see the google_fonts URL in _config.yml) makes it unmistakable.
+strong,
+b {
+  font-weight: 700;
+}
+
+// Publication list entry titles use font-weight: bolder in
+// _publications.scss (selector ".publications ol.bibliography li .title"),
+// which -- like the <strong>/<b> issue above -- resolves relative to the
+// inherited 300 (body) weight to only 400, not a clearly bold 700. The
+// selector here has to match that same specificity (".publications .title"
+// alone is *lower* specificity -- 2 classes vs. the original's 3 classes
+// + 2 type selectors -- so it loses the cascade despite loading later);
+// matching it exactly lets normal source order decide, no !important
+// needed. Uses the same 500 as headings so paper titles read consistently
+// with the rest of the site's heading weight.
+.publications ol.bibliography li .title {
+  font-weight: 500;
+}

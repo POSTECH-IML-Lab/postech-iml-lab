@@ -1,115 +1,458 @@
----
----
+// @preamble{ " \newcommand{\noop}[1]{} " } % a do-nothing command that serves a purpose
 
-@string{aps = {American Physical Society,}}
+@STRING{iclr="Proceedings of the International Conference on Learning Representations (ICLR)"}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@STRING{colt="Proceedings of the Conference on Learning Theory (COLT)"}
+
+@STRING{icml="Proceedings of the International Conference on Machine Learning (ICML)"}
+
+@STRING{neurips="Advances in Neural Information Processing Systems (NeurIPS)"}
+
+@STRING{aistats="International Conference on Artificial Intelligence and Statistics (AISTATS)"}
+
+@STRING{aaai="Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)"}
+
+@STRING{alt="International Conference on Algorithmic Learning Theory (ALT)"}
+
+@STRING{tmlr="Transactions on Machine Learning Research (TMLR)"}
+
+@STRING{emnlp="Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)"}
+
+@STRING{naacl="Proceedings of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL HLT)"}
+
+@STRING{uai="Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)"}
+
+@STRING{tit="IEEE Transactions on Information Theory (TIT)"}
+
+
+
+@misc{zhao26most,
+  title={Nearly Optimal Active Preference Learning and Its Application to LLM Alignment},
+  author={Zhao, Yao and Jun, Kwang-Sung},
+  booktitle={in preparation},
+  year={2026},
+  eprint={2411.01808},
+  archivePrefix={arXiv}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@misc{yun25alignment,
+  title={Alignment as Distribution Learning: Your Preference Model is Explicitly a Language Model}, 
+  author={Jihun Yun and Juno Kim and Jongho Park and Junhyuck Kim and Jongha Jon Ryu and Jaewoong Cho and Kwang-Sung Jun},
+  year={2025},
+  eprint={2506.01523},
+  archivePrefix={arXiv}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+
+
+@article{qin26achieving,
+title={Achieving Adaptivity and Optimality for Multi-armed Bandits using Exponential-Kullback Leibler Maillard Sampling},
+author={Hao Qin and Kwang-Sung Jun and Chicheng Zhang},
+journal=tmlr,
+issn={2835-8856},
+year={2026}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+@InProceedings{li26second,
+  title = 	 {Second-Order Bounds for $[0,1]$-Valued Regression via Betting Loss},
+  author =       {Li, Yinan and Yoon, Sungjoon and Huang, Ethan and Jun, Kwang-Sung},
+  booktitle = 	 colt,
+  pages = 	 {4674--4721},
+  year = 	 {2026}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
+
+@inproceedings{kim26coverage,
+  title={Coverage Improvement and Fast Convergence of On-policy Preference Learning},
+  author={Juno Kim and Jihun Yun and Jason D. Lee and Kwang-Sung Jun},
+  booktitle=icml,
+  year={2026}
 }
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
+@inproceedings{balagopalan26fixed,
+  title={Fixed Budget is No Harder Than Fixed Confidence in Best-Arm Identification up to Logarithmic Factors},
+  author={Kapilan Balagopalan and Yinan Li and Yao Zhao and Tuan Ngo Nguyen and Anton Daitche and Houssam Nassif and Kwang-Sung Jun},
+  booktitle=icml,
+  year={2026}
 }
 
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
+@inproceedings{kim26instance,
+  title={Instance-Dependent Fixed-Budget Pure Exploration in Reinforcement Learning},
+  author={Yeongjong Kim and Yeoneung Kim and Kwang-Sung Jun},
+  booktitle=iclr,
+  year={2026}
 }
 
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+@inproceedings{lee26gllowpopart,
+  title={GL-LowPopArt: A Nearly Instance-Wise Minimax Estimator for (Adaptive) Generalized Linear Low-Rank Trace Regression},
+  author={Lee, Junghyun and Jang, Kyoungseok and Jun, Kwang-Sung  and Vojnovic, Milan and Yun, Se-Young},
+  booktitle=aistats,
+  year={2026}
 }
 
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@inproceedings{balagopalan25fixing,
+  title={Fixing the Loose Brake: Exponential-Tailed Stopping Time in Best Arm Identification},
+  author={Balagopalan, Kapilan and Nguyen, Tuan Ngo and Zhao, Yao and Jun, Kwang-Sung Jun},
+  booktitle=icml,
+  year={2025}
 }
+
+@inproceedings{ryu25improved,
+  title={Improved Offline Contextual Bandits with Second-Order Bounds: Betting and Freezing},
+  author={Ryu, J. Jon and Kwon, Jeongyeol and Koppe, Benjamin and Jun, Kwang-Sung Jun},
+  booktitle=colt,
+  pages = 	 {5015--5053},
+  year={2025}
+}
+
+@inproceedings{nguyen25haver,
+  author={Nguyen, Tuan Ngo and Barrett, Jay and Jun, Kwang-Sung},
+  booktitle = aistats,
+  title = {HAVER: Instance-Dependent Error Bounds for Maximum Mean Estimation and Applications to Q-Learning},
+  year = {2025}
+}
+
+@inproceedings{balagopalan25minimum,
+  author={Balagopalan, Kapilan and Jun, Kwang-Sung},
+  booktitle = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {Minimum Empirical Divergence for Sub-Gaussian Linear Bandits},
+  year = {2025}
+}
+
+@inproceedings{zhao24adaptive,
+  title={Adaptive Experimentation When You Can't Experiment},
+  author={Zhao, Yao and Jun, Kwang-Sung and Fiez, Tanner and Jain, Lalit},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+
+@inproceedings{lee24unified,
+  title={A Unified Confidence Sequence for Generalized Linear Models, with Applications to Bandits},
+  author={Lee, Junghyun and Yun, Se-Young and Jun, Kwang-Sung},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+
+@article{park24transfer,
+  author={Park, Hyejin and Shin, Seiyun and Jun, Kwang-Sung and Ok, Jungseul},
+  journal={IEEE Transactions on Information Theory}, 
+  title={Transfer Learning in Bandits With Latent Continuity}, 
+  year={2024},
+  volume={70},
+  number={11},
+  pages={7952-7970},
+  doi={10.1109/TIT.2024.3441669}
+}
+
+@inproceedings{kuzborskij24better,
+  title={Better-than-KL PAC-Bayes Bounds},
+  author={Kuzborskij, Ilja and Jun, Kwang-Sung and Wu, Yulian and Jang, Kyoungseok and and Orabona, Francesco},
+  booktitle={Proceedings of the Conference on Learning Theory (COLT)},
+  ccf22={},
+  year={2024},
+}
+
+@inproceedings{jang24efficient,
+  title={Efficient Low-Rank Matrix Estimation, Experimental Design, and Arm-Set-Dependent Low-Rank Bandits},
+  author={Jang, Kyoungseok and Zhang, Chicheng and Jun, Kwang-Sung},
+  booktitle={Proceedings of the International Conference on Machine Learning (ICML)},
+  ccf22={},
+  year={2024}
+}
+
+@inproceedings{jun24noise,
+  title={Noise-Adaptive Confidence Sets for Linear Bandits and Application to Bayesian Optimization},
+  author={Jun, Kwang-Sung and Kim, Jungtaek},
+  booktitle={Proceedings of the International Conference on Machine Learning (ICML)},
+  ccf22_={},
+  year={2024}
+}
+
+@inproceedings{lee24improved,
+  title={Improved Regret Bounds of (Multinomial) Logistic Bandits via Regret-to-Confidence-Set Conversion},
+  author={Junghyun Lee and Se-Young Yun and Kwang-Sung Jun},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  ccf22={},
+  year={2024},
+}
+
+@article{orabona24tight,
+  author={Orabona, Francesco and Jun, Kwang-Sung},
+  journal={IEEE Transactions on Information Theory}, 
+  title={Tight Concentrations and Confidence Sequences From the Regret of Universal Portfolio}, 
+  year={2024},
+  volume={70},
+  number={1},
+  pages={436-455},
+  doi={10.1109/TIT.2023.3330187}
+}
+
+@inproceedings{qin23kullback,
+author={Hao Qin and Kwang-Sung Jun and Chicheng Zhang},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+title = {{Kullback-Leibler Maillard Sampling for Multi-armed Bandits with Bounded Rewards}},
+year = {2023}
+}
+
+@article{zhao23revisiting,
+  title={Revisiting Simple Regret: Fast Rates for Returning a Good Arm},
+  author={Zhao, Yao and Stephens, Connor and Szepesv{\'a}ri, Csaba and Jun, Kwang-Sung},
+  journal = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year = {2023}
+}
+
+@inproceedings{jang23tighter,
+  title={Tighter PAC-Bayes bounds through coin-betting},
+  author={Jang, Kyoungseok and Jun, Kwang-Sung and Kuzborskij, Ilja and Orabona, Francesco},
+  booktitle={Proceedings of the Conference on Learning Theory (COLT)},
+  year={2023},
+}
+
+@inproceedings{jang22popart,
+  author = {Kyoungseok Jang and Chicheng Zhang and Kwang-Sung Jun},
+  title = {PopArt: Efficient Sparse Regression and Experimental Design for Optimal Sparse Linear Bandits},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = {2022},
+}
+
+@inproceedings{kim22improved,
+author = {Kim, Yeoneung and Yang, Insoon and Jun, Kwang-Sung},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+title = {{Improved regret analysis for variance-adaptive linear bandits and horizon-free linear mixture mdps}},
+year = {2022}
+}
+
+@article{faury22jointly,
+author = {Faury, Louis and Abeille, Marc and Jun, Kwang-Sung and Calauz{\`{e}}nes, Cl{\'{e}}ment},
+journal = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+title = {{Jointly Efficient and Optimal Algorithms for Logistic Bandits}},
+year = {2022}
+}
+
+@inproceedings{gales22norm,
+author = {Gales, Spencer Brady and Sethuraman, Sunder and Jun, Kwang-Sung},
+booktitle = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+title = {{Norm-Agnostic Linear Bandits}},
+year = {2022}
+}
+
+@article{bian22maillard,
+author = {Bian, Jie and Jun, Kwang-Sung},
+journal = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
+title = {{Maillard Sampling: Boltzmann Exploration Done Optimally}},
+year = {2022}
+}
+
+@article{mason22experimental,
+author = {Mason, Blake and Jun, Kwang-Sung and Jain, Lalit},
+journal = aaai,
+title = {An Experimental Design Approach for Regret Minimization in Logistic Bandits},
+year = {2022}
+}
+
+@article{jun21improved,
+author = {Jun, Kwang-Sung and Jain, Lalit and Mason, Blake and Nassif, Houssam},
+journal = {Proceedings of the International Conference on Machine Learning (ICML)},
+title = {{Improved Confidence Bounds for the Linear Logistic Model and Applications to Linear Bandits}},
+year = {2021}
+}
+
+@inproceedings{jang21improved,
+author = {Jang, Kyoungseok and Jun, Kwang-Sung and Yun, Se Young and Kang, Wanmo},
+booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+pages = {3163--3172},
+title = {{Improved Regret Bounds of Bilinear Bandits using Action Space Dimension Analysis}},
+year = {2021}
+}
+
+@inproceedings{park21transfer,
+author = {Park, Hyejin and Shin, Seiyun and Jun, Kwang-Sung and Ok, Jungseul},
+booktitle = {IEEE International Symposium on Information Theory (ISIT)},
+organization = {IEEE},
+pages = {1463--1468},
+title = {{Transfer Learning in Bandits with Latent Continuity}},
+year = {2021}
+}
+
+@article{jun20crush,
+  title={Crush optimism with pessimism: Structured bandits beyond asymptotic optimality},
+  author={Jun, Kwang-Sung and Zhang, Chicheng},
+  journal={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={33},
+  pages={6366--6376},
+  year={2020}
+}
+
+@inproceedings{jun19kernel,
+ author = {Jun, Kwang-Sung and Cutkosky, Ashok and Orabona, Francesco},
+ booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+ title = {Kernel Truncated Randomized Ridge Regression: Optimal Rates and Low Noise Acceleration},
+ year = {2019}
+}
+
+@InProceedings{jun19parameterfree,
+  title = 	 {Parameter-Free Online Convex Optimization with Sub-Exponential Noise},
+  author =       {Jun, Kwang-Sung and Orabona, Francesco},
+  booktitle = 	 {Proceedings of the Conference on Learning Theory (COLT)},
+  pages = 	 {1802--1823},
+  year = 	 {2019},
+  volume = 	 {99},
+}
+
+@inproceedings{jun19parameterfree2,
+author = {Jun, Kwang-Sung and Orabona, Francesco},
+booktitle = {NeurIPS Workshop on Privacy in Machine Learning (PriML)},
+title = {{Parameter-Free Locally Differentially Private Stochastic Subgradient Descent}},
+year = {2019}
+}
+
+@inproceedings{jun19bilinear,
+author = {Jun, Kwang-Sung and Willett, Rebecca and Wright, Stephen and Nowak, Robert},
+booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+pages = {3163--3172},
+title = {{Bilinear Bandits with Low-rank Structure}},
+volume = {97},
+year = {2019}
+}
+
+@inproceedings{jun18adversarial,
+author = {Jun, Kwang-Sung and Ma, Y. and Li, L. and Zhu, Xiaojin},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+issn = {10495258},
+title = {{Adversarial attacks on stochastic bandits}},
+year = {2018}
+}
+
+@inproceedings{ma18data,
+author = {Ma, Yuzhe and Jun, Kwang-Sung and Li, Lihong and Zhu, Xiaojin},
+booktitle = {Conference on Decision and Game Theory for Security (GameSec)},
+title = {{Data Poisoning Attacks in Contextual Bandits}},
+year = {2018}
+}
+
+@incollection{jun18bayesian,
+title = {Chapter 10 - Bayesian Active Learning on Graphs},
+editor = {Petar M. Djurić and Cédric Richard},
+booktitle = {Cooperative and Graph Signal Processing},
+publisher = {Academic Press},
+pages = {283-297},
+year = {2018},
+isbn = {978-0-12-813677-5},
+doi = {https://doi.org/10.1016/B978-0-12-813677-5.00010-9},
+url = {https://www.sciencedirect.com/science/article/pii/B9780128136775000109},
+author = {Kwang-Sung Jun and Robert Nowak},
+}
+
+@article{jun17online,
+author = {Jun, Kwang-Sung and Orabona, Francesco and Wright, Stephen and Willett, Rebecca},
+doi = {10.1214/17-EJS1379SI},
+issn = {1935-7524},
+journal = {Electronic Journal of Statistics (EJS)},
+number = {2},
+pages = {5282--5310},
+title = {{Online learning for changing environments using coin betting}},
+volume = {11},
+year = {2017}
+}
+
+@inproceedings{jun17improved,
+author = {Jun, Kwang-Sung and Orabona, Francesco and Wright, Stephen and Willett, Rebecca},
+booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+pages = {943--951},
+title = {{Improved Strongly Adaptive Online Learning using Coin Betting}},
+volume = {54},
+year = {2017}
+}
+
+@inproceedings{jun17scalable,
+author = {Jun, Kwang-Sung and Bhargava, Aniruddha and Nowak, Robert and Willett, Rebecca},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+pages = {99--109},
+title = {{Scalable Generalized Linear Bandits: Online Computation and Hashing}},
+year = {2017}
+}
+
+@InProceedings{meng17identifying,
+author="Meng, Xiaozhu
+and Miller, Barton P.
+and Jun, Kwang-Sung",
+editor="Foley, Simon N.
+and Gollmann, Dieter
+and Snekkenes, Einar",
+title="Identifying Multiple Authors in a Binary Program",
+booktitle="Computer Security -- ESORICS 2017",
+year="2017",
+pages="286--304"
+}
+
+
+
+@inproceedings{jun16graph,
+author = {Jun, Kwang-Sung and Nowak, Robert},
+booktitle = {IEEE Global Conference on Signal and Information Processing (GlobalSIP) Symposium on Non-Commutative Theory and Applications},
+pages = {1325--1329},
+title = {{Graph-based active learning: A new look at expected error minimization}},
+year = {2016}
+}
+
+@inproceedings{zemla16uinvite,
+author = {Zemla, Jeffrey C and Kenett, Yoed N and Jun, Kwang-Sung and Austerweil, Joseph L},
+booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society (CogSci)},
+pages = {1907--1912},
+title = {{U-INVITE: Estimating Individual Semantic Networks from Fluency Data.}},
+year = {2016}
+}
+
+@inproceedings{jun16anytime,
+author = {Jun, Kwang-Sung and Nowak, Robert},
+booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+pages = {974--982},
+title = {{Anytime exploration for multi-armed bandits using confidence information}},
+year = {2016}
+}
+
+@inproceedings{jun16top,
+author = {Jun, Kwang-Sung and Jamieson, Kevin and Nowak, Robert and Zhu, Xiaojin},
+booktitle = aistats,
+title = {{Top arm identification in multi-armed bandits with batch arm pulls}},
+year = {2016}
+}
+
+@phdthesis{jun15some,
+  author  = {Kwang-Sung Jun},
+  title   = {Some Machine Learning Methods from Sequential Input},
+  school  = {University of Wisconsin-Madison},
+  year    = {2015}
+}
+
+@inproceedings{jun15human,
+author = {Jun, Kwang-Sung and Zhu, Xiaojin and Rogers, T. and Yang, Z. and Yuan, M.},
+booktitle = neurips,
+pages = {1072--1080},
+title = {{Human memory search as initial-visit emitting random walk}},
+year = {2015}
+}
+
+@inproceedings{jun13learning,
+author = {Jun, Kwang-Sung and Zhu, Xiaojin and Settles, B. and Rogers, Timothy T.},
+booktitle = icml,
+title = {{Learning from human-generated lists}},
+year = {2013}
+}
+
+@inproceedings{xu12learning,
+author = {Xu, Jun-Ming and Jun, Kwang-Sung and Zhu, Xiaojin and Bellmore, Amy},
+booktitle = naacl,
+pages = {656--666},
+title = {{Learning from Bullying Traces in Social Media}},
+year = {2012}
+}
+
+@inproceedings{zhu10cognitive,
+author = {Zhu, Xiaojin and Gibson, B.R. and Jun, Kwang-Sung and Rogers, Timothy T. and Harrison, J. and Kalish, C.},
+booktitle = icml,
+title = {{Cognitive models of test-item effects in human category learning}},
+year = {2010}
+}
+
+
