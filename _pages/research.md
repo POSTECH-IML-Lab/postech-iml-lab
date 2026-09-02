@@ -151,44 +151,6 @@ against exploiting what already works well.
 
   </div>
 </div>
-<!--
-    <h2>Learning theory</h2>
-    <p>
-      A recurring theme in our work is developing novel, practical confidence bounds — tools for quantifying
-      uncertainty that often become key building blocks for constructing efficient interactive-ML algorithms. (TODO: confidence bounds, generic learning theory)
-    </p>
-    <ul class="iml-research-subtopics">
-      <li>"Confidence Sequences via Online Learning" — invited talk at UW&ndash;Madison SILO <span class="iml-venue">(Nov '24)</span> (TODO: add link)</li>
-      <li>Unified confidence sets for generalized linear models, finally removing the norm dependence in logistic bandit regret bounds <span class="iml-venue">(NeurIPS '24)</span></li>
-      <li>Improved PAC-Bayes bounds with a better divergence<span class="iml-venue">(COLT '25)</span> and with a variance adaptivity<span class="iml-venue">(COLT '25)</span></li>
-    </ul>
--->
 
 
 
-
-<!--
-
-— an umbrella term for problems where the learner's decisions are actions that shape which data or feedback it receives next, rather than passive predictions.
-
-This includes the standard reinforcement learning, bandit algorithms, Bayesian optimization, and active learning.
-An offline version of IML is a setting where the data is collected by a fixed policy, which causes a distribution mismatch between the train and the test data.
-Offline reinforcement learning falls into this category, and so do modern problems like LLM post-training, alignment, and test-time scaling.
-I often leverage theoretical tools to solve these problems with guarantees, analyze performance guarantees for popular algorithms, 
-
-
-Beyond offline reinforcement learning, modern 
-
-
-(e.g., online reinforcement learning). 
-
-There are offline settings 
-Its offline versions 
-This includes reinforcement learning, bandit algorithms, Bayesian optimization, active learning, and LLM post-training, alignment, and test-time scaling.
-
-
-A recurring theme in our work is developing uncertainty quantification methods proved to be correct and efficient
-
-novel, practical confidence bounds that serve as key building blocks for efficient IML algorithms.
-
--->
