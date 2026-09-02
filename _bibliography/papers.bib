@@ -25,18 +25,26 @@
 @STRING{tit="IEEE Transactions on Information Theory (TIT)"}
 
 
+// - preprints must appear with @misc
+// - additional info you want to put:
+//    additional_info = {, <span class="highlight">Oral Presentation</span>}
+// - additional info appearing in a new line:
+//    note = {<span class="highlight">Oral Presentation</span>}
+// - award or click to expand note:
+//    award = {Selected as an oral presentation.},
+//    award_name = {Oral Presentation},
 
 @misc{zhao26most,
   title={Nearly Optimal Active Preference Learning and Its Application to LLM Alignment},
   author={Zhao, Yao and Jun, Kwang-Sung},
   booktitle={in preparation},
   year={2026},
-  eprint={2411.01808},
+  eprint={2602.01581},
   archivePrefix={arXiv}
 }
 
 @misc{yun25alignment,
-  title={Alignment as Distribution Learning: Your Preference Model is Explicitly a Language Model}, 
+  title={Beyond RLHF: A Unified Theoretical Framework of Alignment}, 
   author={Jihun Yun and Juno Kim and Jongho Park and Junhyuck Kim and Jongha Jon Ryu and Jaewoong Cho and Kwang-Sung Jun},
   year={2025},
   eprint={2506.01523},
@@ -58,7 +66,7 @@ year={2026}
   author =       {Li, Yinan and Yoon, Sungjoon and Huang, Ethan and Jun, Kwang-Sung},
   booktitle = 	 colt,
   pages = 	 {4674--4721},
-  year = 	 {2026}
+  year = 	 {2026},
 }
 
 
@@ -102,7 +110,8 @@ year={2026}
   author={Ryu, J. Jon and Kwon, Jeongyeol and Koppe, Benjamin and Jun, Kwang-Sung Jun},
   booktitle=colt,
   pages = 	 {5015--5053},
-  year={2025}
+  year={2025},
+  video={https://www.youtube.com/watch?v=Stm_bAyAaQ4}
 }
 
 @inproceedings{nguyen25haver,
@@ -130,7 +139,8 @@ year={2026}
   title={A Unified Confidence Sequence for Generalized Linear Models, with Applications to Bandits},
   author={Lee, Junghyun and Yun, Se-Young and Jun, Kwang-Sung},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2024}
+  year={2024},
+  note = {<span class="highlight">Oral Presentation</span> at ICML’24 Workshop on Aligning Reinforcement Learning Experimentalists and Theorists}
 }
 
 @article{park24transfer,
@@ -141,7 +151,7 @@ year={2026}
   volume={70},
   number={11},
   pages={7952-7970},
-  doi={10.1109/TIT.2024.3441669}
+  doi_={10.1109/TIT.2024.3441669}
 }
 
 @inproceedings{kuzborskij24better,
@@ -157,7 +167,9 @@ year={2026}
   author={Jang, Kyoungseok and Zhang, Chicheng and Jun, Kwang-Sung},
   booktitle={Proceedings of the International Conference on Machine Learning (ICML)},
   ccf22={},
-  year={2024}
+  year={2024},
+  code={https://github.com/jajajang/lowpopart},
+  video={https://youtu.be/OWvxJ32n6ME?si=RHVWe4zyHOHjABzS},
 }
 
 @inproceedings{jun24noise,
@@ -174,6 +186,7 @@ year={2026}
   booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
   ccf22={},
   year={2024},
+  code={https://github.com/nick-jhlee/logistic_bandit}
 }
 
 @article{orabona24tight,
@@ -184,7 +197,7 @@ year={2026}
   volume={70},
   number={1},
   pages={436-455},
-  doi={10.1109/TIT.2023.3330187}
+  doi_={10.1109/TIT.2023.3330187}
 }
 
 @inproceedings{qin23kullback,
@@ -206,6 +219,7 @@ year = {2023}
   author={Jang, Kyoungseok and Jun, Kwang-Sung and Kuzborskij, Ilja and Orabona, Francesco},
   booktitle={Proceedings of the Conference on Learning Theory (COLT)},
   year={2023},
+  note = {<span class="highlight">Oral Presentation</span> at ICML’23 Workshop on PAC-Bayes Meets Interactive Learning}
 }
 
 @inproceedings{jang22popart,
@@ -240,7 +254,8 @@ year = {2022}
 author = {Bian, Jie and Jun, Kwang-Sung},
 journal = {International Conference on Artificial Intelligence and Statistics (AISTATS)},
 title = {{Maillard Sampling: Boltzmann Exploration Done Optimally}},
-year = {2022}
+year = {2022},
+video={https://www.youtube.com/watch?v=JWNVXPihti0},
 }
 
 @article{mason22experimental,
@@ -280,14 +295,18 @@ year = {2021}
   journal={Advances in Neural Information Processing Systems (NeurIPS)},
   volume={33},
   pages={6366--6376},
-  year={2020}
+  year={2020},
+  slides={https://kwangsungjun.github.io/data/2020-crop-slides-rltheory.pdf},
+  video={https://www.youtube.com/watch?v=S8dluBz4lMU},
 }
 
 @inproceedings{jun19kernel,
  author = {Jun, Kwang-Sung and Cutkosky, Ashok and Orabona, Francesco},
  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
  title = {Kernel Truncated Randomized Ridge Regression: Optimal Rates and Low Noise Acceleration},
- year = {2019}
+ year = {2019},
+ poster={https://kwangsungjun.github.io/data/2019-kernel-poster.pdf},
+ slides={https://kwangsungjun.github.io/data/2019-kernel-slides.pdf},
 }
 
 @InProceedings{jun19parameterfree,
@@ -303,16 +322,18 @@ year = {2021}
 author = {Jun, Kwang-Sung and Orabona, Francesco},
 booktitle = {NeurIPS Workshop on Privacy in Machine Learning (PriML)},
 title = {{Parameter-Free Locally Differentially Private Stochastic Subgradient Descent}},
-year = {2019}
+year = {2019},
+poster={https://kwangsungjun.github.io/data/2019-priml-poster.pdf},
 }
 
 @inproceedings{jun19bilinear,
 author = {Jun, Kwang-Sung and Willett, Rebecca and Wright, Stephen and Nowak, Robert},
 booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
 pages = {3163--3172},
-title = {{Bilinear Bandits with Low-rank Structure}},
+title = {Bilinear Bandits with Low-rank Structure},
 volume = {97},
-year = {2019}
+year = {2019},
+code = {https://github.com/kwangsungjun/lrbandit},
 }
 
 @inproceedings{jun18adversarial,
@@ -331,21 +352,19 @@ year = {2018}
 }
 
 @incollection{jun18bayesian,
-title = {Chapter 10 - Bayesian Active Learning on Graphs},
+title = {Bayesian Active Learning on Graphs},
 editor = {Petar M. Djurić and Cédric Richard},
 booktitle = {Cooperative and Graph Signal Processing},
 publisher = {Academic Press},
 pages = {283-297},
 year = {2018},
 isbn = {978-0-12-813677-5},
-doi = {https://doi.org/10.1016/B978-0-12-813677-5.00010-9},
-url = {https://www.sciencedirect.com/science/article/pii/B9780128136775000109},
 author = {Kwang-Sung Jun and Robert Nowak},
 }
 
 @article{jun17online,
 author = {Jun, Kwang-Sung and Orabona, Francesco and Wright, Stephen and Willett, Rebecca},
-doi = {10.1214/17-EJS1379SI},
+doi_ = {10.1214/17-EJS1379SI},
 issn = {1935-7524},
 journal = {Electronic Journal of Statistics (EJS)},
 number = {2},
@@ -361,6 +380,7 @@ booktitle = {Proceedings of the International Conference on Artificial Intellige
 pages = {943--951},
 title = {{Improved Strongly Adaptive Online Learning using Coin Betting}},
 volume = {54},
+additional_info = {, <span class="highlight">Oral Presentation</span>},
 year = {2017}
 }
 
@@ -369,7 +389,8 @@ author = {Jun, Kwang-Sung and Bhargava, Aniruddha and Nowak, Robert and Willett,
 booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
 pages = {99--109},
 title = {{Scalable Generalized Linear Bandits: Online Computation and Hashing}},
-year = {2017}
+year = {2017},
+code = {https://kwangsungjun.github.io/data/code-gloc-20180510.zip}
 }
 
 @InProceedings{meng17identifying,
@@ -408,7 +429,9 @@ author = {Jun, Kwang-Sung and Nowak, Robert},
 booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
 pages = {974--982},
 title = {{Anytime exploration for multi-armed bandits using confidence information}},
-year = {2016}
+year = {2016},
+award = {Emilie Kaufmann and her group have pointed out an error in this paper.  Specifically, the paper's Lemma 7 and 8 is likely to be false. In an attempt to fix this, I realized that the stopping time's tail probability should be controlled exponentially rather than polynomially. This led to our ICML'25 "Fixing the Loose Breke" paper that guarantees an exponential tail. We have not tried hard to see if this helps resolve the issue we had in the original paper, though.  }, 
+award_name = {post-publication note},            
 }
 
 @inproceedings{jun16top,
@@ -418,7 +441,7 @@ title = {{Top arm identification in multi-armed bandits with batch arm pulls}},
 year = {2016}
 }
 
-@phdthesis{jun15some,
+phdthesis{jun15some,
   author  = {Kwang-Sung Jun},
   title   = {Some Machine Learning Methods from Sequential Input},
   school  = {University of Wisconsin-Madison},
@@ -437,7 +460,9 @@ year = {2015}
 author = {Jun, Kwang-Sung and Zhu, Xiaojin and Settles, B. and Rogers, Timothy T.},
 booktitle = icml,
 title = {{Learning from human-generated lists}},
-year = {2013}
+year = {2013},
+code={https://kwangsungjun.github.io/data/swirl_code_data_v2.zip},
+video={http://www.youtube.com/watch?v=V4TDynR2gPQ},
 }
 
 @inproceedings{xu12learning,

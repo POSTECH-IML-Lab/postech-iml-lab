@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Graduate School of Artificial Intelligence & Department of Computer Science and Engineering, POSTECH"
-
+subtitle: '<a href="https://ai.postech.ac.kr">GSAI</a>/<a href="https://cse.postech.ac.kr">CSE</a> @ POSTECH'
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
@@ -18,10 +17,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-The **Interactive Machine Learning Lab (IML Lab)**, led by [Prof. Kwang-Sung Jun](/members/), studies interactive machine learning (IML) — an umbrella term for problems where the learner's decisions are actions that shape which data or feedback it receives next, rather than passive predictions. This includes reinforcement learning, bandit algorithms, Bayesian optimization, and active learning. A recurring theme in our work is developing novel, practical confidence bounds that serve as key building blocks for efficient IML algorithms.
 
-Recently, we have been looking into IML problems that arise from large language models, including alignment, post-training, reasoning, and test-time scaling — viewing a model's generated outputs as *actions* and bringing IML tools to bear on them.
+Our lab, led by [Prof. Kwang-Sung Jun](/members/), studies a broad range of problems in interactive machine learning (IML).
+Our research spans reinforcement learning, bandit algorithms, Bayesian optimization, and active learning, as well as emerging problems in LLM post-training, alignment, and test-time scaling.
 
-We collaborate closely with Krafton AI on post-training of LLMs and with Meta Platforms on efficient A/B testing systems.
+We develop efficient algorithms with rigorous mathematical guarantees, study the theoretical properties of widely used methods, and empirically investigate practical algorithms for modern machine learning systems.
+We collaborate closely with Krafton AI on LLM post-training and with Meta Platforms on efficient experimentation and A/B testing.
+Please visit our [research](/research/) page to learn more.
 
-We are actively recruiting self-motivated students for MS and PhD, as well as unpaid undergraduate interns (preferably onsite). Visit the [members](/members/) page to meet the lab, and [publications](/publications/) for our recent work — shoot us an email if you're interested in joining!
+**We are actively recruiting** self-motivated students for MS and PhD programs, as well as undergraduate interns (preferably onsite).
+Visit the [members](/members/) page to meet the lab, and see our [research](/research/) and [publications](/publications/) pages for our recent work.
+If you are interested in joining us, please email the PI!
+

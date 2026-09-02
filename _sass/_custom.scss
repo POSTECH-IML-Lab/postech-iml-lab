@@ -85,8 +85,8 @@ h6 {
 // values are touched -- dark mode is disabled site-wide (enable_darkmode:
 // false in _config.yml), so the html[data-theme="dark"] variant is unused.
 :root {
-  --global-theme-color: #A66520;
-  --global-hover-color: #A66520;
+  --global-theme-color: #2563EB;
+  --global-hover-color: #2563EB;
 }
 
 // Top spacing for every page's main content wrapper. This targets
@@ -153,4 +153,70 @@ b {
 // with the rest of the site's heading weight.
 .publications ol.bibliography li .title {
   font-weight: 500;
+}
+
+// Reusable "highlight" span for arbitrary text anywhere in this site's
+// markdown/HTML content (kramdown passes raw HTML through untouched, so
+// this works in any .md/.liquid file, not just publications). Bold weight
+// (matches the strong/b fix above) plus a dedicated orange, deliberately
+// distinct from the site's own blue accent color (--global-theme-color)
+// so a highlighted string stands out as its own thing rather than being
+// mistaken for a link. Usage in markdown:
+//   <span class="highlight">your custom text</span>
+.highlight {
+  font-weight: 700;
+  color: #EA580C;
+}
+
+// Publication entries: shrink every piece of text except the title (the
+// author line, the venue/date line, and the citation badges) by 2px
+// relative to whatever they'd otherwise inherit, using calc(1em - 2px)
+// rather than a fixed rem value so it scales with inherited size instead
+// of assuming a specific base. Selectors are matched to upstream's own
+// nesting/specificity (".publications ol.bibliography li .author" etc.,
+// from _publications.scss) for the same reason as the .title font-weight
+// rule above -- a lower-specificity selector here would lose the cascade
+// despite loading later. .title itself is deliberately untouched, so it
+// stays the visually dominant line in each entry.
+.publications ol.bibliography li .author,
+.publications ol.bibliography li .periodical,
+.publications ol.bibliography li .badges {
+  font-size: calc(1em - 2px);
+}
+
+// The link buttons (PDF, DOI, arXiv, Code, etc. -- see the padding
+// tightening above) get cut a bit further still, on top of the general
+// 2px reduction above -- their boxes read as busy/cluttered at the same
+// size as the rest of the entry text, especially now that they're also
+// more tightly padded.
+.publications ol.bibliography li .links a.btn {
+  font-size: calc(1em - 4px);
+}
+
+// Every link button in a publication entry (PDF, DOI, arXiv, Code, HTML,
+// Supp, Video, Blog, Poster, Slides, Website, Bib, Abs, the "award" badge,
+// etc. -- all share upstream's ".links a.btn" class in _publications.scss)
+// uses fairly generous padding that reads as an oversized box, especially
+// once labels get longer (e.g. a custom award label like "Oral
+// Presentation"). Tightened across the board so every one of these boxes
+// is more compact and consistent with each other.
+.publications ol.bibliography li .links a.btn {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem;
+}
+
+// About page subtitle (page.subtitle, e.g. "GSAI/CSE @ POSTECH", rendered
+// as `<p class="desc">` right under the site title in al_folio_core's
+// _layouts/about.liquid) has no styling of its own upstream -- it just
+// inherits plain body text, so it read as just another paragraph rather
+// than part of the title block above it. Weight bumped to match headings
+// (500, vs. body's 300) and size upped slightly, but kept in the muted
+// "light text" color rather than full text-color or the accent color, so
+// it reads as belonging to the title without competing with it.
+.desc {
+  font-weight: 500;
+  font-size: 1.15em;
+  color: var(--global-text-color-light);
 }

@@ -2,7 +2,6 @@
 layout: page
 permalink: /members/
 title: members
-description: members of the Interactive Machine Learning Lab
 nav: true
 nav_order: 7
 ---
@@ -42,6 +41,7 @@ nav_order: 7
     font-weight: 600;
     background: rgba(127, 127, 127, 0.12);
     border: 1px solid rgba(127, 127, 127, 0.25);
+    overflow: hidden;
   }
   .iml-card .iml-name {
     font-weight: 600;
@@ -80,6 +80,30 @@ nav_order: 7
     font-size: 0.85rem;
     margin-top: 2.5rem;
   }
+  .iml-name a,
+  .iml-alum-name a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(127, 127, 127, 0.5);
+  }
+  .iml-name a:hover,
+  .iml-alum-name a:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+  }
+  .iml-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    /* The source photo is a chest-up shot, not a tight headshot, so the
+       face reads small at avatar size. Scaling up and shifting the zoom
+       origin toward the face (roughly 31% down from the top of the
+       photo, where the eyes/nose sit) crops in tighter on the face
+       instead of showing mostly shoulders/torso. */
+    transform: scale(1.5);
+    transform-origin: 50% 31%;
+  }
 </style>
 
 <div class="iml-people">
@@ -89,18 +113,18 @@ nav_order: 7
 
   <div class="iml-grid">
     <div class="iml-card">
-      <div class="iml-avatar">KJ</div>
-      <p class="iml-name">Kwang-Sung Jun</p>
+      <div class="iml-avatar"><img src="{{ '/assets/img/members/kwang-sung-jun.jpg' | relative_url }}" alt="Kwang-Sung Jun" loading="lazy"></div>
+      <p class="iml-name"><a href="https://kwangsungjun.github.io/">Kwang-Sung Jun</a></p>
       <span class="iml-role">Principal Investigator</span>
     </div>
     <div class="iml-card">
       <div class="iml-avatar">SS</div>
-      <p class="iml-name">Seiyun Shin</p>
+      <p class="iml-name"><a href="https://seiyun-shin.github.io/">Seiyun Shin</a></p>
       <span class="iml-role">Postdoc (Summer'26–)</span>
     </div>
     <div class="iml-card">
       <div class="iml-avatar">MH</div>
-      <p class="iml-name">Minsoo Ha</p>
+      <p class="iml-name"><a href="https://minsoo0926.github.io/">Minsoo Ha</a></p>
       <span class="iml-role">M.S. Student (Fall'26–)</span>
     </div>
     <div class="iml-card">
@@ -115,22 +139,22 @@ nav_order: 7
     </div>
     <div class="iml-card">
       <div class="iml-avatar">TH</div>
-      <p class="iml-name">Taehyeok Ha</p>
+      <p class="iml-name"><a href="https://www.linkedin.com/in/hataehyeok/">Taehyeok Ha</a></p>
       <span class="iml-role">Intern (Summer'26–)</span>
     </div>
     <div class="iml-card">
       <div class="iml-avatar">YL</div>
-      <p class="iml-name">Yinan Li</p>
+      <p class="iml-name"><a href="https://www.cs.arizona.edu/person/yinan-li">Yinan Li</a></p>
       <span class="iml-role">PhD Student, U. Arizona (2024–)</span>
     </div>
     <div class="iml-card">
       <div class="iml-avatar">TN</div>
-      <p class="iml-name">Tuan Nguyen</p>
+      <p class="iml-name"><a href="https://tnguyen9210.github.io/">Tuan Nguyen</a></p>
       <span class="iml-role">PhD Student, U. Arizona (2023–)</span>
     </div>
     <div class="iml-card">
       <div class="iml-avatar">KB</div>
-      <p class="iml-name">Kapilan Balagopalan</p>
+      <p class="iml-name"><a href="https://kapilan-balagopalan.github.io/">Kapilan Balagopalan</a></p>
       <span class="iml-role">PhD Student, U. Arizona (2023–)</span>
     </div>
   </div>
@@ -145,11 +169,11 @@ nav_order: 7
       <span class="iml-alum-detail">Intern, Seokyoung U., Summer'26</span>
     </li>
     <li>
-      <span class="iml-alum-name">Sungjoon Yoon</span>
+      <span class="iml-alum-name"><a href="https://cilabs.kaist.ac.kr/members/ms/sungjoon-yoon">Sungjoon Yoon</a></span>
       <span class="iml-alum-detail">UA PhD program, 2025–2026 → BU PhD Program</span>
     </li>
     <li>
-      <span class="iml-alum-name">Yao Zhao</span>
+      <span class="iml-alum-name"><a href="https://meyaozhao.github.io/">Yao Zhao</a></span>
       <span class="iml-alum-detail">UA PhD, 2020–2025 → Microsoft AI</span>
     </li>
     <li>
@@ -169,7 +193,7 @@ nav_order: 7
       <span class="iml-alum-detail">UA CS PhD Student, 2020–2022 → NUS PhD Program</span>
     </li>
     <li>
-      <span class="iml-alum-name">Kyoungseok Jang</span>
+      <span class="iml-alum-name"><a href="https://jajajang.github.io/">Kyoungseok Jang</a></span>
       <span class="iml-alum-detail">UA Postdoc, 2022–2023 → postdoc at NYU, then Università degli Studi di Milano → Assistant Professor, Chung-Ang University (2025–)</span>
     </li>
     <li>
