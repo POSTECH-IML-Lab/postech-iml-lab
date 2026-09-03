@@ -75,11 +75,6 @@ nav_order: 7
     font-size: 0.9rem;
     text-align: right;
   }
-  .iml-note {
-    opacity: 0.6;
-    font-size: 0.85rem;
-    margin-top: 2.5rem;
-  }
   .iml-name a,
   .iml-alum-name a {
     color: inherit;
@@ -188,30 +183,22 @@ nav_order: 7
       <span class="iml-alum-detail">UA BS, 2024–2025</span>
     </li>
     <li>
-      <span class="iml-alum-name">Spencer Brady Gales</span>
-      <span class="iml-alum-detail">UA Applied Math PhD, 2020–2021 → switched advisor</span>
+      <span class="iml-alum-name"><a href="https://jajajang.github.io/">Kyoungseok Jang</a></span>
+      <span class="iml-alum-detail">UA Postdoc, 2022–2023 → postdoc at NYU, then Università degli Studi di Milano → Assistant Professor, Chung-Ang University (2025–)</span>
     </li>
     <li>
       <span class="iml-alum-name">Jie Bian</span>
       <span class="iml-alum-detail">UA CS PhD Student, 2020–2022 → NUS PhD Program</span>
     </li>
     <li>
-      <span class="iml-alum-name"><a href="https://jajajang.github.io/">Kyoungseok Jang</a></span>
-      <span class="iml-alum-detail">UA Postdoc, 2022–2023 → postdoc at NYU, then Università degli Studi di Milano → Assistant Professor, Chung-Ang University (2025–)</span>
-    </li>
-    <li>
       <span class="iml-alum-name">Hari Krishnan</span>
       <span class="iml-alum-detail">UA CS BS, 2020–2022</span>
+    </li>
+    <li>
+      <span class="iml-alum-name">Spencer Brady Gales</span>
+      <span class="iml-alum-detail">UA Applied Math PhD, 2020–2021 → switched advisor</span>
     </li>
   </ul>
 </section>
 
 </div>
-
-<p class="iml-note">
-  Initials are placeholders for members without a photo yet — drop a square headshot in
-  <code>assets/img/members/</code> and swap the initials <code>&lt;div&gt;</code> for an
-  <code>&lt;img&gt;</code> in <code>_pages/profiles.md</code>. Roster pulled from
-  <a href="https://kwangsungjun.github.io/research-group.html">kwangsungjun.github.io</a> on 2026-09-01 — please
-  double-check names, roles, and dates before publishing.
-</p>

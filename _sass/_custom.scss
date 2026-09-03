@@ -85,8 +85,8 @@ h6 {
 // values are touched -- dark mode is disabled site-wide (enable_darkmode:
 // false in _config.yml), so the html[data-theme="dark"] variant is unused.
 :root {
-  --global-theme-color: #2563EB;
-  --global-hover-color: #2563EB;
+  --global-theme-color: #2563eb;
+  --global-hover-color: #2563eb;
 }
 
 // Top spacing for every page's main content wrapper. This targets
@@ -112,9 +112,13 @@ h6 {
 // heavy, high-contrast strip against this site's light theme. Swapped for
 // the page's own background plus a thin top divider and muted text, so it
 // stays legible but recedes rather than drawing the eye.
+// Only rendered on the about / landing page now (see _layouts/default.liquid).
 footer.fixed-bottom {
   background-color: var(--global-bg-color);
   border-top: 1px solid var(--global-divider-color);
+  // Smaller than al_folio_core's default 0.75rem -- the copyright line should
+  // sit quietly at the foot of the about page.
+  font-size: 0.7rem;
 
   .container {
     color: var(--global-text-color-light);
@@ -165,7 +169,7 @@ b {
 //   <span class="highlight">your custom text</span>
 .highlight {
   font-weight: 700;
-  color: #EA580C;
+  color: #ea580c;
 }
 
 // Publication entries: shrink every piece of text except the title (the
