@@ -64,12 +64,15 @@ nav_order: 3
   .iml-venue {
     opacity: 0.6;
     font-size: 0.88em;
-    white-space: nowrap;
   }
   @media (max-width: 600px) {
     .iml-research-topic,
     .iml-research-topic:nth-of-type(even) {
       flex-direction: column;
+    }
+    .iml-research-body {
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
   }
 </style>
