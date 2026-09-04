@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: '<a href="https://ai.postech.ac.kr">GSAI</a>/<a href="https://cse.postech.ac.kr">CSE</a> @ POSTECH'
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
@@ -17,8 +16,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-
-Our lab, led by [Prof. Kwang-Sung Jun](/members/), studies a broad range of problems in interactive machine learning (IML).
+Our lab, led by [Prof. Kwang-Sung Jun](/members/) (<a href="https://ai.postech.ac.kr">GSAI</a>/<a href="https://cse.postech.ac.kr">CSE</a> @ POSTECH), studies a broad range of problems in interactive machine learning (IML).
 Our research spans reinforcement learning, bandit algorithms, Bayesian optimization, and active learning, as well as emerging problems in LLM post-training, alignment, and test-time scaling.
 
 We develop efficient algorithms with rigorous mathematical guarantees, study the theoretical properties of widely used methods, and empirically investigate practical algorithms for modern machine learning systems.
@@ -28,4 +26,3 @@ Please visit our [research](/research/) page to learn more.
 **We are actively recruiting** self-motivated students for MS and PhD programs, as well as undergraduate interns (preferably onsite).
 Visit the [members](/members/) page to meet the lab, and see our [research](/research/) and [publications](/publications/) pages for our recent work.
 If you are interested in joining us, please email the PI!
-
