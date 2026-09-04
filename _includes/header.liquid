@@ -1,6 +1,9 @@
 {% comment %}
   Local override of al_folio_core's _includes/header.liquid (gem version 1.0.15).
-  Three changes from upstream:
+  Four changes from upstream:
+  0. A POSTECH logo image is prepended inside the navbar container, before the
+     navbar brand, linking out to the university site. Sized in CSS via
+     .navbar-postech-logo (see _sass/_custom.scss).
   1. The navbar brand (site title) is no longer hidden on the home/about page.
      Upstream hides it there because the about layout shows the same text as a
      big page heading instead -- for a lab site we want the lab name visible in
@@ -22,6 +25,9 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
+      <a class="navbar-postech-logo" href="https://www.postech.ac.kr/eng/index.do" target="_blank" rel="noopener" aria-label="POSTECH">
+        <img src="{{ '/assets/img/postech-logo.png' | relative_url }}" alt="POSTECH">
+      </a>
       {% if true %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.navbar_title and site.navbar_title != '' %}

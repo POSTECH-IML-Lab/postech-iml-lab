@@ -9,6 +9,28 @@
   background: #f7e6b0;
 }
 
+// POSTECH logo at the far left of the navbar, before the "IML Lab" brand.
+// The navbar .container is a flex row (Bootstrap justify-content:space-between).
+// The logo sits first; pushing the brand's right margin to auto collapses the
+// gap so logo + brand stay grouped on the left and the nav items stay right.
+// The source PNG is a 195x17 wordmark strip -- pin its rendered height and let
+// the width scale.
+.navbar-postech-logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.9rem;
+
+  img {
+    height: 18px;
+    width: auto;
+    display: block;
+  }
+}
+
+.navbar .navbar-brand {
+  margin-right: auto;
+}
+
 // Give the top-nav menu items more visual weight than bare bold text: a
 // colored underline that grows in on hover, and a filled underline plus a
 // soft background pill to mark the current page. Reuses the theme's own
